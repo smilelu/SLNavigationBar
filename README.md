@@ -1,5 +1,7 @@
 # SLNavigationBar
 
+自定义导航栏，模仿UINavigationBar创建BarButtonItem的风格，方便对Navigationbar进行扩展。
+
 [![CI Status](http://img.shields.io/travis/Lilu/SLNavigationBar.svg?style=flat)](https://travis-ci.org/Lilu/SLNavigationBar)
 [![Version](https://img.shields.io/cocoapods/v/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
 [![License](https://img.shields.io/cocoapods/l/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
