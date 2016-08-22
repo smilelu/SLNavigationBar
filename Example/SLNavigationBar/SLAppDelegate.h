@@ -2,8 +2,8 @@
 //  SLAppDelegate.h
 //  SLNavigationBar
 //
-//  Created by Lilu on 08/22/2016.
-//  Copyright (c) 2016 Lilu. All rights reserved.
+//  Created by smilelu on 08/22/2016.
+//  Copyright (c) 2016 smilelus. All rights reserved.
 //
 
 @import UIKit;

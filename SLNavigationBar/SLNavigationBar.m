@@ -64,15 +64,15 @@
     
     [_rightView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf).with.offset(27);
-        make.width.mas_equalTo(weakSelf.leftView);
         make.height.mas_equalTo(@30);
         make.right.mas_equalTo(weakSelf);
     }];
     
     [_slTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(weakSelf).with.offset(27);
-        make.left.mas_equalTo(weakSelf.leftView.mas_right);
-        make.right.mas_equalTo(weakSelf.rightView.mas_left);
+        make.centerX.mas_equalTo(weakSelf);
+        make.left.mas_greaterThanOrEqualTo(weakSelf.leftView.mas_right);
+        make.right.mas_greaterThanOrEqualTo(weakSelf.rightView.mas_left);
         make.height.mas_equalTo(@30);
     }];
     
@@ -137,7 +137,6 @@
         make.width.mas_greaterThanOrEqualTo(@30);
         make.right.mas_equalTo(weakSelf.rightView).with.offset(-8);
         make.left.mas_equalTo(weakSelf.rightView).with.offset(8);
-        
     }];
 }
 

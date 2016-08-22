@@ -2,17 +2,24 @@
 //  SLAppDelegate.m
 //  SLNavigationBar
 //
-//  Created by Lilu on 08/22/2016.
-//  Copyright (c) 2016 Lilu. All rights reserved.
+//  Created by smilelu on 08/22/2016.
+//  Copyright (c) 2016 smilelu. All rights reserved.
 //
 
 #import "SLAppDelegate.h"
+#import "SLBaseNaviController.h"
+#import "SLViewController.h"
 
 @implementation SLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[SLBaseNaviController alloc] initWithRootViewController:[[SLViewController alloc] init]];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
