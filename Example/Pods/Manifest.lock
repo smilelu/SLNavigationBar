@@ -4,7 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
-  - SLNavigationBar (0.1.0)
+  - Masonry (1.0.1)
+  - SLNavigationBar (0.1.0):
+    - Masonry
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -16,6 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  SLNavigationBar: 1331821a807193d0e32eeb5d39a09896867f9a3f
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  SLNavigationBar: b212ff047880be431f5dad090ed192836e168c6b
 
 COCOAPODS: 0.39.0

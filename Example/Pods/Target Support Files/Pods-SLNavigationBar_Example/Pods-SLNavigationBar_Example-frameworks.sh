@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SLNavigationBar_Example/Masonry.framework"
   install_framework "Pods-SLNavigationBar_Example/SLNavigationBar.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SLNavigationBar_Example/Masonry.framework"
   install_framework "Pods-SLNavigationBar_Example/SLNavigationBar.framework"
 fi
