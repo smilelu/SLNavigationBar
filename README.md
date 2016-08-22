@@ -1,6 +1,6 @@
 # SLNavigationBar
 
-自定义导航栏，模仿UINavigationBar创建BarButtonItem的风格，方便对Navigationbar进行扩展。
+Custom navigation bar, Create SLBarButtonItem to similar UINavigationBar style, convenient to extend the Navigationbar.
 
 [![CI Status](http://img.shields.io/travis/Lilu/SLNavigationBar.svg?style=flat)](https://travis-ci.org/Lilu/SLNavigationBar)
 [![Version](https://img.shields.io/cocoapods/v/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
@@ -20,15 +20,15 @@ SLBarButtonItem *leftItem = [[SLBarButtonItem alloc] initWithImage:[UIImage imag
 
 Add a few of barBottonItems:
 ```objective-c
-    SLBarButtonItem *rightItem1 = [[SLBarButtonItem alloc] initWithImage:[  UIImage imageNamed:@"titlebar_more"] target:self action:@selector(rightItemClick:)];
-    SLBarButtonItem *rightItem2 = [[SLBarButtonItem alloc] initWithTitle:@"删除" target:self action:@selector(rightItemClick:)];
-    self.naviBar.rightItems = @[rightItem1, rightItem2];
+SLBarButtonItem *rightItem1 = [[SLBarButtonItem alloc] initWithImage:[  UIImage imageNamed:@"titlebar_more"] target:self action:@selector(rightItemClick:)];
+SLBarButtonItem *rightItem2 = [[SLBarButtonItem alloc] initWithTitle:@"删除" target:self action:@selector(rightItemClick:)];
+self.naviBar.rightItems = @[rightItem1, rightItem2];
 ```
 
 ###SLBaseViewController
 The ViewController which is Inheritance from SLBaseViewController, can override method initNaviBar.You can set default SLNavigationBar title use the following method:
 ```objective-c
-    self.title = @"SLNavigationBar Demo";
+self.title = @"SLNavigationBar Demo";
 ```
 
 
