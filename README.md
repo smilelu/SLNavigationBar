@@ -11,6 +11,27 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+###SLBarButtonItem
+Add a barBottunItem: 
+```objective-c
+SLBarButtonItem *leftItem = [[SLBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"titlebar_user"] target:self action:@selector(userClick:)];
+    self.naviBar.leftItem = leftItem;
+```
+
+Add a few of barBottonItems:
+```objective-c
+    SLBarButtonItem *rightItem1 = [[SLBarButtonItem alloc] initWithImage:[  UIImage imageNamed:@"titlebar_more"] target:self action:@selector(rightItemClick:)];
+    SLBarButtonItem *rightItem2 = [[SLBarButtonItem alloc] initWithTitle:@"删除" target:self action:@selector(rightItemClick:)];
+    self.naviBar.rightItems = @[rightItem1, rightItem2];
+```
+
+###SLBaseViewController
+The ViewController which is Inheritance from SLBaseViewController, can override method initNaviBar.You can set default SLNavigationBar title use the following method:
+```objective-c
+    self.title = @"SLNavigationBar Demo";
+```
+
+
 ## Requirements
 
 ## Installation
