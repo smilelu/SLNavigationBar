@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source_files = 'SLNavigationBar/**/*.{m,h}'
 
   s.resource_bundles = {
-    'SLNavigationBar' => ['SLNavigationBar/*.png']
+    'SLNavigationBar' => ['Resources/*.png']
   }
 
   s.frameworks = 'UIKit'
