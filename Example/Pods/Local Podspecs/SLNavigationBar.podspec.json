@@ -1,0 +1,22 @@
+{
+  "name": "SLNavigationBar",
+  "version": "0.1.0",
+  "summary": "A short description of SLNavigationBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SLNavigationBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lilu": "lilu@micfunding.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SLNavigationBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SLNavigationBar/Classes/**/*"
+}

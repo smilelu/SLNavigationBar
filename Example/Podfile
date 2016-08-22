@@ -4,7 +4,6 @@ target 'SLNavigationBar_Example' do
   pod 'SLNavigationBar', :path => '../'
 
   target 'SLNavigationBar_Tests' do
-    inherit! :search_paths
 
     pod 'FBSnapshotTestCase'
   end

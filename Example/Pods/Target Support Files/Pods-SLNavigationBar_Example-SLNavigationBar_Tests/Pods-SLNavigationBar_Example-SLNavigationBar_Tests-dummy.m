@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_SLNavigationBar_Example_SLNavigationBar_Tests : NSObject
+@end
+@implementation PodsDummy_Pods_SLNavigationBar_Example_SLNavigationBar_Tests
+@end
