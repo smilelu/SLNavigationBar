@@ -1,6 +1,6 @@
 # SLNavigationBar
 
-Custom navigation bar, Create SLBarButtonItem to similar UINavigationBar style, convenient to extend the Navigationbar.
+A simple custom navigation bar, Create SLBarButtonItem just like create UIBarButtonItem style, convenient to extend the Navigationbar.
 
 [![CI Status](http://img.shields.io/travis/Lilu/SLNavigationBar.svg?style=flat)](https://travis-ci.org/Lilu/SLNavigationBar)
 [![Version](https://img.shields.io/cocoapods/v/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
