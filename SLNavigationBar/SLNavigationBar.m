@@ -91,6 +91,9 @@
     for(UIView *v in [self.leftView subviews]) {
         [v removeFromSuperview];
     }
+    if (!leftItem) {
+        return;
+    }
     [self.leftView addSubview:leftItem];
     
     [self layoutIfNeeded];
@@ -127,6 +130,9 @@
 - (void) setRightItem:(UIView *)rightItem {
     for(UIView *v in [self.rightView subviews]) {
         [v removeFromSuperview];
+    }
+    if (!rightItem) {
+        return;
     }
     [self.rightView addSubview:rightItem];
     

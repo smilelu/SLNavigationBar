@@ -7,16 +7,13 @@
 //
 
 #import "SLViewController.h"
-#import "SLIconViewController.h"
-#import "SLTextViewController.h"
+#import "SLNextViewController.h"
 
 #define CellId @"SLCell"
 
-@interface SLViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface SLViewController ()
 
-@property (nonatomic, retain) UITableView *tableView;
-
-@property (nonatomic, retain) NSArray *optionAry;
+@property (nonatomic, retain) UIButton *nextBtn;
 
 @end
 
@@ -27,40 +24,22 @@
     [super viewDidLoad];
     
     self.title = @"SLNavigationBar Demo";
+
+    _nextBtn = [UIButton new];
+    [_nextBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [_nextBtn setTitle:@"NextViewController" forState:UIControlStateNormal];
+    [_nextBtn addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
+
+    [self.view insertSubview:_nextBtn belowSubview:self.naviBar];
     
-    _optionAry = @[@"IconBarItems", @"TextBarItems"];
-	
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.naviBar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height-self.naviBar.frame.size.height)];
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    
-    [self.view insertSubview:_tableView belowSubview:self.naviBar];
+    [self setLayout];
 }
 
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.optionAry.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellId];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellId] ;
-    }
-    cell.textLabel.text = _optionAry[indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    if (indexPath.row == 0) {
-        SLIconViewController *iconVC = [[SLIconViewController alloc] init];
-        [self.navigationController pushViewController:iconVC animated:YES];
-    } else {
-        SLTextViewController *textVC = [[SLTextViewController alloc] init];
-        [self.navigationController pushViewController:textVC animated:YES];
-    }
+- (void) setLayout {
+    __weak SLViewController *weakSelf = self;
+    [_nextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(weakSelf.view);
+    }];
 }
 
 - (void) initNaviBar {
@@ -73,6 +52,11 @@
 
 - (void) userClick:(id) sender {
     NSLog(@"%@", @"LeftBarButtonItem Click!");
+}
+
+- (void) nextAction:(UIButton *) sender {
+    SLNextViewController *nextVC = [[SLNextViewController alloc] init];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

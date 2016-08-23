@@ -21,8 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		656B43691D6AC6E800F367FF /* SLBaseNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B43681D6AC6E800F367FF /* SLBaseNaviController.m */; };
-		656B436C1D6AC99700F367FF /* SLIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B436B1D6AC99700F367FF /* SLIconViewController.m */; };
-		656B436F1D6AC9A800F367FF /* SLTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656B436E1D6AC9A800F367FF /* SLTextViewController.m */; };
+		658202B41D6BE1A1002A11B0 /* SLNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658202B31D6BE1A1002A11B0 /* SLNextViewController.m */; };
 		6610ACB45347ED6A04CEAEE7 /* Pods_SLNavigationBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1FEFDA641EDB1D11E560FA /* Pods_SLNavigationBar_Example.framework */; };
 		6709A9128C622F869F7D6144 /* Pods_SLNavigationBar_Example_SLNavigationBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6053F0826216561BA8B56C /* Pods_SLNavigationBar_Example_SLNavigationBar_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -64,10 +63,8 @@
 		63597FE50954CF8C9609853A /* Pods-SLNavigationBar_Example-SLNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLNavigationBar_Example-SLNavigationBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SLNavigationBar_Example-SLNavigationBar_Tests/Pods-SLNavigationBar_Example-SLNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		656B43671D6AC6E800F367FF /* SLBaseNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBaseNaviController.h; sourceTree = "<group>"; };
 		656B43681D6AC6E800F367FF /* SLBaseNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBaseNaviController.m; sourceTree = "<group>"; };
-		656B436A1D6AC99700F367FF /* SLIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLIconViewController.h; sourceTree = "<group>"; };
-		656B436B1D6AC99700F367FF /* SLIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLIconViewController.m; sourceTree = "<group>"; };
-		656B436D1D6AC9A800F367FF /* SLTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTextViewController.h; sourceTree = "<group>"; };
-		656B436E1D6AC9A800F367FF /* SLTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTextViewController.m; sourceTree = "<group>"; };
+		658202B21D6BE1A1002A11B0 /* SLNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLNextViewController.h; sourceTree = "<group>"; };
+		658202B31D6BE1A1002A11B0 /* SLNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLNextViewController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A9FD029C413F2B32279BE023 /* SLNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SLNavigationBar.podspec; path = ../SLNavigationBar.podspec; sourceTree = "<group>"; };
 		AE6053F0826216561BA8B56C /* Pods_SLNavigationBar_Example_SLNavigationBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLNavigationBar_Example_SLNavigationBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,10 +154,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SLViewController.h */,
 				6003F5A6195388D20070C39A /* SLViewController.m */,
-				656B436A1D6AC99700F367FF /* SLIconViewController.h */,
-				656B436B1D6AC99700F367FF /* SLIconViewController.m */,
-				656B436D1D6AC9A800F367FF /* SLTextViewController.h */,
-				656B436E1D6AC9A800F367FF /* SLTextViewController.m */,
+				658202B21D6BE1A1002A11B0 /* SLNextViewController.h */,
+				658202B31D6BE1A1002A11B0 /* SLNextViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -405,11 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658202B41D6BE1A1002A11B0 /* SLNextViewController.m in Sources */,
 				6003F59E195388D20070C39A /* SLAppDelegate.m in Sources */,
-				656B436C1D6AC99700F367FF /* SLIconViewController.m in Sources */,
 				656B43691D6AC6E800F367FF /* SLBaseNaviController.m in Sources */,
 				6003F5A7195388D20070C39A /* SLViewController.m in Sources */,
-				656B436F1D6AC9A800F367FF /* SLTextViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

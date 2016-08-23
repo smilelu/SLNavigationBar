@@ -7,7 +7,6 @@
 //
 
 #import "SLBarButtonItem.h"
-#import "SLBaseViewController.h"
 
 @implementation SLBarButtonItem
 
@@ -31,17 +30,5 @@
     }
     return self;
 }
-
-//- (UIViewController *)findViewController:(UIView *)sourceView
-//{
-//    id target=sourceView;
-//    while (target) {
-//        target = ((UIResponder *)target).nextResponder;
-//        if ([target isKindOfClass:[SLBaseViewController class]]) {
-//            break;
-//        }
-//    }
-//    return target;
-//}
 
 @end
