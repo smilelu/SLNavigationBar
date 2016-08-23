@@ -29,19 +29,19 @@
     [_titleStyleBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [_titleStyleBtn setTitle:@"TitleStyle" forState:UIControlStateNormal];
     [_titleStyleBtn addTarget:self action:@selector(titleStyleAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_titleStyleBtn];
+    [self.view insertSubview:_titleStyleBtn belowSubview:self.naviBar];
     
     _imageStyleBtn = [UIButton new];
     [_imageStyleBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [_imageStyleBtn setTitle:@"ImageStyle" forState:UIControlStateNormal];
     [_imageStyleBtn addTarget:self action:@selector(imageStyleAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_imageStyleBtn];
+    [self.view insertSubview:_imageStyleBtn belowSubview:self.naviBar];
     
     _clearItemsBtn = [UIButton new];
     [_clearItemsBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [_clearItemsBtn setTitle:@"ClearItems" forState:UIControlStateNormal];
     [_clearItemsBtn addTarget:self action:@selector(clearItemsAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:_clearItemsBtn];
+    [self.view insertSubview:_clearItemsBtn belowSubview:self.naviBar];
     
     [self setLayout];
 }
@@ -87,17 +87,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
