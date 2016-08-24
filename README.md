@@ -4,7 +4,7 @@ A simple custom navigation bar, Create SLBarButtonItem just like create UIBarBut
 
 This is [Swift Version](https://github.com/smilelu/SSLNavigationBar).
 
-![](./screenshots/text_popup.png)
+![](./screenshots/navigationDemo.gif)
 
 ## Example
 
