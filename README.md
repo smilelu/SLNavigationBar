@@ -4,10 +4,7 @@ A simple custom navigation bar, Create SLBarButtonItem just like create UIBarBut
 
 This is [Swift Version](https://github.com/smilelu/SSLNavigationBar).
 
-[![CI Status](http://img.shields.io/travis/Lilu/SLNavigationBar.svg?style=flat)](https://travis-ci.org/Lilu/SLNavigationBar)
-[![Version](https://img.shields.io/cocoapods/v/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
-[![License](https://img.shields.io/cocoapods/l/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
-[![Platform](https://img.shields.io/cocoapods/p/SLNavigationBar.svg?style=flat)](http://cocoapods.org/pods/SLNavigationBar)
+![](./screenshots/text_popup.png)
 
 ## Example
 
