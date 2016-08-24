@@ -81,6 +81,7 @@
 }
 
 - (void) rightItemClick:(SLBarButtonItem *) sender {
+    NSLog(@"%@", sender.currentTitle);
     //Add Click Action
 }
 

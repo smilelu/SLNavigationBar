@@ -119,9 +119,9 @@
         [v mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.mas_equalTo(weakSelf.leftView);
             make.width.mas_greaterThanOrEqualTo(@30);
-            make.left.mas_equalTo(i > 0?((UIView *)leftItems[i-1]).mas_right:weakSelf.leftView).with.offset(8);
+            make.left.mas_equalTo(i > 0 ? ((UIView *)leftItems[i-1]).mas_right : weakSelf.leftView.mas_left).with.offset(8);
             if (i == leftItems.count - 1) {
-                make.right.mas_greaterThanOrEqualTo(weakSelf.leftView);
+                make.right.mas_equalTo(weakSelf.leftView);
             }
         }];
     }
