@@ -57,23 +57,23 @@
 - (void) layoutSubviews {
     __weak SLNavigationBar *weakSelf = self;
     [_leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf).with.offset(27);
+        make.top.mas_equalTo(weakSelf).with.offset(20);
         make.left.mas_equalTo(weakSelf);
-        make.height.mas_equalTo(@30);
+        make.bottom.mas_equalTo(weakSelf);
     }];
     
     [_rightView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf).with.offset(27);
-        make.height.mas_equalTo(@30);
+        make.top.mas_equalTo(weakSelf).with.offset(20);
         make.right.mas_equalTo(weakSelf);
+        make.bottom.mas_equalTo(weakSelf);
     }];
     
     [_slTitleView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(weakSelf).with.offset(27);
+        make.top.mas_equalTo(weakSelf).with.offset(20);
         make.centerX.mas_equalTo(weakSelf);
         make.left.mas_greaterThanOrEqualTo(weakSelf.leftView.mas_right);
         make.right.mas_greaterThanOrEqualTo(weakSelf.rightView.mas_left);
-        make.height.mas_equalTo(@30);
+        make.bottom.mas_equalTo(weakSelf);
     }];
     
     [_slTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
